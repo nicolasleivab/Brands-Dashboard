@@ -1,0 +1,32 @@
+{
+  "name": "remazing-challenge",
+  "version": "1.0.0",
+  "description": "Remazing Challenge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasleivab/Remazing-Challenge.git"
+  },
+  "author": "Nicolás Leiva Büchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasleivab/Remazing-Challenge/issues"
+  },
+  "homepage": "https://github.com/nicolasleivab/Reamzing-Challenge#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
