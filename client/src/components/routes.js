@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from './containers/NavBar';
-import Dashboard from './containers/Dashboard';
-import Login from './containers/Login';
-import PrivateRoute from './PrivateRouting';
+import NavBar from './NavBar';
+import Dashboard from './Dashboard';
+import Login from './Login';
+import PrivateRoute from './routing/PrivateRouting';
 
 const Routes = () => {
   return (
@@ -12,8 +12,8 @@ const Routes = () => {
         <NavBar />
         <Router>
           <Switch>
-            <Route exact path='/register' component={Dashboard} />
-            <PrivateRoute exact path='/login' component={Login} />
+            <PrivateRoute exact path='/' component={Dashboard} />
+            <Route exact path='/login' component={Login} />
           </Switch>
         </Router>
       </Fragment>

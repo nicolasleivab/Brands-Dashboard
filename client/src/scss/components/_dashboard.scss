@@ -1,0 +1,14 @@
+.dashboard-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 275px;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  font-family: 'Sans Pro Semi-Bold', sans-serif;
+  color: $font_dark_gray;
+  background-color: $secondary_light_gray;
+  border-bottom: solid $secondary_border_gray 1px;
+}

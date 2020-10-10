@@ -1,0 +1,29 @@
+.notifications-container {
+  position: relative;
+  width: 35x;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .orange-circle {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $primary_orange;
+    font-size: 10px;
+    font-family: 'Sans Pro Semi-Bold';
+    color: $primary_white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .notifications-icon {
+    color: $font_dark_gray;
+  }
+}

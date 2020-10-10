@@ -1,0 +1,16 @@
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .username {
+    margin: 0 8px 0 35px;
+  }
+
+  .img-container {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $font_dark_gray;
+  }
+}

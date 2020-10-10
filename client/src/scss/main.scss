@@ -1,3 +1,8 @@
 @import 'common';
 
-@import './components/nav-bar.scss';
+@import './components/nav-bar';
+@import './components/dashboard';
+
+@import './atoms/logo';
+@import './atoms/notifications';
+@import './atoms//avatar';

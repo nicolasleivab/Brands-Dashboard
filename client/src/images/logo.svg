@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1292 291" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="clip-path" transform="translate(88.86 111.87)">
+      <rect class="cls-1" width="1290.05" height="288.28"/>
+    </clipPath>
+    <clipPath id="clip-path-2" transform="translate(88.86 111.87)">
+      <rect class="cls-1" width="1290.05" height="288.28"/>
+    </clipPath>
+    <clipPath id="clip-path-3" transform="translate(88.86 111.87)">
+      <path class="cls-1" d="M263.17,189.44l-73.73,73.73A14.71,14.71,0,0,0,210.25,284L284,210.24a14.71,14.71,0,0,0-20.81-20.8"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_5" x1="-443.54" y1="-451.22" x2="-442.54" y2="-451.22" gradientTransform="matrix(133.69, 0, 0, -133.69, 59468.85, -60088.47)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe080"/>
+      <stop offset="1" stop-color="#eb5856"/>
+    </linearGradient>
+    <clipPath id="clip-path-4" transform="translate(88.86 111.87)">
+      <path class="cls-1" d="M86.53,0a12.81,12.81,0,0,0-9,3.77L3.77,77.5A12.84,12.84,0,0,0,0,86.5v.2a12.87,12.87,0,0,0,22,9L95.71,22a12.88,12.88,0,0,0-9-22Z"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_5-2" x1="-443.58" y1="-451.4" x2="-442.58" y2="-451.4" gradientTransform="matrix(130.02, 0, 0, -130.02, 57658.4, -58639.33)" xlink:href="#Unbenannter_Verlauf_5"/>
+    <clipPath id="clip-path-5" transform="translate(88.86 111.87)">
+      <path class="cls-1" d="M159.8,12.35,12.35,159.8a14.71,14.71,0,1,0,20.81,20.81L180.61,33.15a14.71,14.71,0,0,0-20.81-20.8"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_5-3" x1="-442.87" y1="-448.49" x2="-441.87" y2="-448.49" gradientTransform="matrix(237.96, 0, 0, -237.96, 105363.16, -106628.17)" xlink:href="#Unbenannter_Verlauf_5"/>
+    <clipPath id="clip-path-6" transform="translate(88.86 111.87)">
+      <path class="cls-1" d="M253.29,105.83,105.83,253.29a14.71,14.71,0,0,0,20.81,20.8L274.1,126.64a14.71,14.71,0,1,0-20.81-20.81"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_5-4" x1="-442.87" y1="-448.49" x2="-441.87" y2="-448.49" gradientTransform="matrix(237.96, 0, 0, -237.96, 105454.19, -106532.22)" xlink:href="#Unbenannter_Verlauf_5"/>
+    <clipPath id="clip-path-7" transform="translate(88.86 111.87)">
+      <path class="cls-1" d="M268.23,10.84,209,26.7c-5.54,1.48-6.75,6-2.7,10.07L215,45.43,39.33,221.1a18.39,18.39,0,1,0,26,26L241,71.44l8.66,8.67c4.06,4,8.59,2.84,10.07-2.7l15.87-59.2c1.24-4.65-.89-7.73-4.88-7.73a9.79,9.79,0,0,0-2.5.36"/>
+    </clipPath>
+    <linearGradient id="Unbenannter_Verlauf_5-5" x1="-442.62" y1="-447.5" x2="-441.62" y2="-447.5" gradientTransform="matrix(332.66, 0, 0, -332.66, 147230.96, -148730.91)" xlink:href="#Unbenannter_Verlauf_5"/>
+    <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{clip-path:url(#clip-path-2);}.cls-4{fill:#012f40;}.cls-5{clip-path:url(#clip-path-3);}.cls-6{fill:url(#Unbenannter_Verlauf_5);}.cls-7{clip-path:url(#clip-path-4);}.cls-8{fill:url(#Unbenannter_Verlauf_5-2);}.cls-9{clip-path:url(#clip-path-5);}.cls-10{fill:url(#Unbenannter_Verlauf_5-3);}.cls-11{clip-path:url(#clip-path-6);}.cls-12{fill:url(#Unbenannter_Verlauf_5-4);}.cls-13{clip-path:url(#clip-path-7);}.cls-14{fill:url(#Unbenannter_Verlauf_5-5);}</style>
+  </defs>
+  <g id="Ebene_2" data-name="Ebene 2" transform="matrix(1, 0, 0, 1, -87.694824, -110.442787)">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g id="Remazing_Logo">
+        <g class="cls-2">
+          <g class="cls-3">
+            <path class="cls-4" d="M517.85,206.32H485.53l-42-48.18H417.38v48.18H390.2V62c22.86,0,45.71.21,68.56.21,34,.21,51.88,22.85,51.88,47.76,0,19.77-9.05,39.74-36.44,45.3l43.65,49.2ZM417.38,87.52v46.12h41.38c17.3,0,24.71-11.53,24.71-23.06s-7.62-23.06-24.71-23.06Z" transform="translate(88.86 111.87)"/>
+            <path class="cls-4" d="M544.4,164.52c1.64,12.56,12.56,21.62,30.26,21.62,9.27,0,21.41-3.5,27.18-9.47l16.06,15.85C607.19,203.64,589.69,209,574.25,209c-35,0-55.79-21.61-55.79-54.14,0-30.89,21-53.12,53.94-53.12,34,0,55.17,21,51.26,62.79Zm55.17-20.79C597.93,130.55,587.63,124,573.22,124c-13.59,0-24.7,6.59-28.41,19.77Z" transform="translate(88.86 111.87)"/>
+            <path class="cls-4" d="M704.36,206.32V152c0-13.38-7-25.53-20.79-25.53C670,126.43,662,138.58,662,152v54.36H636.83V104.61H647.6A14.51,14.51,0,0,1,662,117c5.35-10.29,17.09-14,26.76-14,12.15,0,24.3,5,30.06,18.94,9.06-14.41,20.8-18.52,34-18.52,28.83,0,43,17.7,43,48.17v54.77H770.66V151.55c0-13.38-5.57-24.7-19.15-24.7s-22,11.73-22,25.11v54.36Z" transform="translate(88.86 111.87)"/>
+            <path class="cls-4" d="M907.58,104.82h10.06v101.5H894l-1.23-14.83c-5.76,11.94-21.62,17.71-32.94,17.92-30.06.2-52.29-18.33-52.29-53.95,0-35,23.26-53.32,52.91-53.11,13.58,0,26.56,6.38,32.32,16.47a14.87,14.87,0,0,1,14.85-14m-75,50.64c0,20.53,15,32.25,33.12,30.76,36.54-3,36.48-58.41-.07-61.31-18-1.43-33,10.06-33,30.55" transform="translate(88.86 111.87)"/>
+            <polygon class="cls-4" points="1104.28 216.69 1104.28 228.63 1057.55 293.48 1104.69 293.48 1104.69 318.19 1019.25 318.19 1019.25 307.69 1067.84 239.54 1022.96 239.54 1022.96 216.69 1104.28 216.69"/>
+            <rect class="cls-4" x="1119.72" y="216.27" width="25.12" height="101.91"/>
+            <path class="cls-4" d="M1149.23,206.32V153.2c0-15.15-8.12-26.73-23.59-27.16-14.87-.42-26.85,12.24-26.85,27.11v53.17h-24.91V104.61h8.55a15.65,15.65,0,0,1,15.54,13.8c10.29-10.09,20.59-15.24,33.35-15.24,23.89,0,43,17.91,43,49.82v53.33Z" transform="translate(88.86 111.87)"/>
+            <path class="cls-4" d="M1284.5,104.33l5.55,4.19-11.33,14.41c7.83,8.86,10.71,18.94,10.71,30.06,0,12.56-4.74,30.27-21.41,37.88,16.88,8.45,21,20.59,21,33.56,0,28-21.41,45.3-50.85,45.3s-51.47-17.91-51.47-45.3h24.91c0,13.18,12.14,21.83,26.56,21.83s25.73-7.83,25.73-21.83S1250.63,204,1238,204.05c-25.63.1-48-17.85-50.88-43.32-4.05-36.2,20.37-59.21,51-59.21,8,0,16.26,1,23.26,5.77a16.62,16.62,0,0,1,23.07-3M1211.61,153c0,17.71,11.94,28.21,26.56,28.21,14.41,0,26.35-10.71,26.35-28.21s-11.94-28.61-26.35-28.61c-14.62,0-26.56,10.91-26.56,28.61" transform="translate(88.86 111.87)"/>
+            <path class="cls-4" d="M1059.36,77c0-9.14-7.2-14.94-15.89-14.94s-16,5.69-16,14.94,7.19,14.72,16,14.72,15.89-5.59,15.89-14.72" transform="translate(88.86 111.87)"/>
+          </g>
+          <g class="cls-5">
+            <rect class="cls-6" x="162.75" y="162.75" width="147.91" height="147.91" transform="translate(-9.18 348.57) rotate(-45)"/>
+          </g>
+          <g class="cls-7">
+            <rect class="cls-8" x="-20.42" y="-21.05" width="141.57" height="141.57" transform="translate(68.44 162.05) rotate(-45)"/>
+          </g>
+          <g class="cls-9">
+            <rect class="cls-10" x="-29.61" y="-29.61" width="252.18" height="252.18" transform="translate(48.9 208.35) rotate(-45)"/>
+          </g>
+          <g class="cls-11">
+            <rect class="cls-12" x="63.88" y="63.87" width="252.18" height="252.18" transform="translate(10.18 301.83) rotate(-45)"/>
+          </g>
+          <g class="cls-13">
+            <rect class="cls-14" x="-17.58" y="-40.59" width="344.16" height="344.16" transform="translate(41.13 259.63) rotate(-45)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

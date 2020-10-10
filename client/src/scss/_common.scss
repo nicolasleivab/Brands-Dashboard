@@ -8,27 +8,33 @@
 
 @import './constants.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@font-face {
+  font-family: 'Sans Pro';
+  src: url('./../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+}
 
+@font-face {
+  font-family: 'Sans Pro Semi-Bold';
+  src: url('./../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Sans Pro Bold';
+  src: url('./../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+}
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Sans Pro', sans-serif;
   position: relative;
   font-size: 1.6rem;
   overflow-x: hidden;
-  background: rgb(242, 242, 242);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(242, 242, 242, 1) 78%
-  );
-  height: 100%;
+  background-color: $primary_color;
   width: 100%;
-  background-size: cover;
+  height: 100vh;
 }
 
 .blur-on {
