@@ -15,15 +15,13 @@ const Routes = () => {
 
   return (
     <div>
-      <Fragment>
-        <NavBar />
-        <Router>
-          <Switch>
-            <PrivateRoute exact path='/' component={Dashboard} />
-            <Route exact path='/login' component={Login} />
-          </Switch>
-        </Router>
-      </Fragment>
+      <NavBar />
+      <Router>
+        <Switch>
+          <PrivateRoute exact path='/' component={Dashboard} />
+          <Route exact path='/login' component={Login} />
+        </Switch>
+      </Router>
     </div>
   );
 };

@@ -12,3 +12,12 @@
   background-color: $secondary_light_gray;
   border-bottom: solid $secondary_border_gray 1px;
 }
+.grid-container {
+  height: 100vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 50px;
+  padding: 170px 0 0 275px;
+}

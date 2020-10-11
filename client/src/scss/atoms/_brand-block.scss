@@ -1,0 +1,11 @@
+.brand-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: $primary_white;
+  box-shadow: 0px 4px 10px $font_light_gray;
+  margin: 25px 0 50px 0;
+}
