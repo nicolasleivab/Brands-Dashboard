@@ -1,0 +1,24 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    margin: 15px;
+    height: 35px;
+    width: 270px;
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  .title-login {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sans Pro Semi-Bold', sans-serif;
+  }
+  .icon {
+    color: $font_dark_gray;
+  }
+}

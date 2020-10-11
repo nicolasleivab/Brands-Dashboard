@@ -40,3 +40,12 @@ body {
 .blur-on {
   filter: blur(10px);
 }
+
+.main-btn {
+  background-color: $primary_orange;
+  width: fit-content;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  font-family: 'Sans Pro Bold', sans-serif;
+  color: $primary_white;
+}

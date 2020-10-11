@@ -16,8 +16,7 @@ import {
 
 const NavBar = () => {
   const authContext = useContext(AuthContext);
-  // const { isAuthenticated } = authContext;
-  const isAuthenticated = true;
+  const { isAuthenticated } = authContext;
 
   return (
     <div>
