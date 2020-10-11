@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 8px 0 35px;
+  cursor: pointer;
 
   &:focus,
   &:active {
@@ -22,5 +23,15 @@
     height: 35px;
     border-radius: 50%;
     background-color: $font_dark_gray;
+  }
+  .option-icon {
+    color: $font_dark_gray;
+    margin: 0 0 0 20px;
+
+    &:focus,
+    &:active {
+      outline: none;
+      color: $primary_orange;
+    }
   }
 }

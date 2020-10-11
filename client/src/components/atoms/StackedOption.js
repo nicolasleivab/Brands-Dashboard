@@ -14,7 +14,7 @@ const StackedOption = (props) => {
           <p>{firstOption}</p>
           <FontAwesomeIcon
             onClick={() => setActive(!isActive)}
-            onKeyDown={(e) => (e.keyCode === 13 ? setActive(!isActive) : null)}
+            onKeyDown={(e) => (e.key === 'Enter' ? setActive(!isActive) : null)}
             icon={isActive ? faAngleUp : faAngleDown}
             className='option-icon arrow'
             tabIndex={1}
