@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
+const { check, validationResult } = require('express-validator');
 
 const User = require('../models/User');
 const Brand = require('../models/Brand');
@@ -18,3 +19,34 @@ router.get('/', auth, async (req, res) => {
     console.error(err.message);
   }
 });
+
+// @route   POST api/brands
+// @desc    Add new Brand
+// @access  Private
+router.post(
+  '/',
+  [auth, [check('name', 'Name is required').not().isEmpty()]],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ erros: errors.array() });
+    }
+    const { name, imgUrl } = req.body;
+
+    try {
+      const newBrand = new Brand({
+        name,
+        imgUrl,
+        user: req.user.id,
+      });
+
+      const brand = await newBrand.save();
+      res.json(brand);
+    } catch (err) {
+      console.error(err.message);
+      res.status(500).send('Server Error');
+    }
+  }
+);
+
+module.exports = router;

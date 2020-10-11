@@ -14,10 +14,13 @@
 }
 .grid-container {
   height: 100vh;
+  width: 100wh;
   overflow-y: scroll;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   column-gap: 50px;
   padding: 170px 0 0 275px;
+  align-items: center;
+  justify-content: center;
 }
