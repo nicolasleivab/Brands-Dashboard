@@ -11,6 +11,7 @@
   color: $font_dark_gray;
   background-color: $secondary_light_gray;
   border-bottom: solid $secondary_border_gray 1px;
+  z-index: 1;
 }
 .brands-container {
   height: 100vh;

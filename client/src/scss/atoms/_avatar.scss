@@ -22,7 +22,11 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: $font_dark_gray;
+    background-color: transparent;
+
+    img {
+      border-radius: 50%;
+    }
   }
   .option-icon {
     color: $font_dark_gray;

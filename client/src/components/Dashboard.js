@@ -36,10 +36,13 @@ const Dashboard = () => {
       <div className='brands-container'>
         <SearchFilter onChange={(e) => filterBrands(e)} />
         <div className='grid-container'>
-          {brands.length > 0 &&
+          {brands.length > 0 ? (
             brands.map((brand) => (
               <BrandBlock key={brand.name} imgUrl={brand.imgUrl} />
-            ))}
+            ))
+          ) : (
+            <p style={{ marginTop: 50 }}>Sorry, not found...</p>
+          )}
         </div>
       </div>
     </div>

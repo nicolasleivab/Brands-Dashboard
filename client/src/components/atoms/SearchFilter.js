@@ -15,7 +15,7 @@ const SearchFilter = (props) => {
         <p>Your brands</p>
         <FontAwesomeIcon icon={faAngleUp} className='arrow-icon' />
       </div>
-      <div className='flex-container'>
+      <div className='search-container'>
         <input placeholder='Search brands...' onChange={onChange} />
         <FontAwesomeIcon icon={faSearch} className='search-icon' />
       </div>
