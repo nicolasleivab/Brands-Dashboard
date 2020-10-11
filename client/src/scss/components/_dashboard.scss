@@ -12,6 +12,11 @@
   background-color: $secondary_light_gray;
   border-bottom: solid $secondary_border_gray 1px;
   z-index: 1;
+
+  @media only screen and (max-width: 850px) {
+    justify-content: center;
+    padding: 0;
+  }
 }
 .brands-container {
   height: 100vh;
@@ -26,4 +31,13 @@
   padding: 0 0 0 275px;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
 }

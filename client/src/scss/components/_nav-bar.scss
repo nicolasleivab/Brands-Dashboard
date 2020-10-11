@@ -6,6 +6,10 @@
   border-right: solid $secondary_border_gray 1px;
   background-color: $primary_white;
   z-index: 2;
+
+  @media only screen and (max-width: 850px) {
+    visibility: hidden;
+  }
   ul {
     margin: 85px 0 0 0;
     display: flex;

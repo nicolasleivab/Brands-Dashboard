@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import useWindowSize from '../../hooks/useWindowSize';
 import {
   faSearch,
   faThLarge,
@@ -9,6 +10,7 @@ import {
 
 const SearchFilter = (props) => {
   const { onChange } = props;
+  const [windowWidth, windowHeight] = useWindowSize();
   return (
     <div className='search-filter'>
       <div className='flex-container'>
@@ -19,10 +21,12 @@ const SearchFilter = (props) => {
         <input placeholder='Search brands...' onChange={onChange} />
         <FontAwesomeIcon icon={faSearch} className='search-icon' />
       </div>
-      <div className='flex-container'>
-        <FontAwesomeIcon icon={faThLarge} className='layout-icon' />
-        <FontAwesomeIcon icon={faBars} className='layout-icon' />
-      </div>
+      {windowWidth > 1048 && (
+        <div className='flex-container'>
+          <FontAwesomeIcon icon={faThLarge} className='layout-icon' />
+          <FontAwesomeIcon icon={faBars} className='layout-icon' />
+        </div>
+      )}
     </div>
   );
 };
