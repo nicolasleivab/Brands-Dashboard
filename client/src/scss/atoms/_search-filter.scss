@@ -1,0 +1,13 @@
+.search-filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 160px 0 0 200px;
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
