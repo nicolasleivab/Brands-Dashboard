@@ -1,11 +1,19 @@
 .notifications-container {
   position: relative;
-  width: 35x;
+  width: 35px;
   height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  &:focus,
+  &:active {
+    outline: none;
+    .notifications-icon {
+      color: $primary_orange;
+    }
+  }
 
   .orange-circle {
     position: absolute;

@@ -4,7 +4,7 @@ import logo from '../../images/logo.svg';
 const Logo = () => {
   return (
     <div className='logo-container'>
-      <img src={logo} width={120} />
+      <img src={logo} width={120} alt='logo' />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { faBell } from '@fortawesome/free-solid-svg-icons';
 const Notifications = (props) => {
   const { noteCount } = props;
   return (
-    <div className='notifications-container'>
+    <div className='notifications-container' tabIndex={1}>
       <div className='orange-circle'>{noteCount}</div>
       <FontAwesomeIcon icon={faBell} className='notifications-icon' />
     </div>
