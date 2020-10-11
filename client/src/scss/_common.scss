@@ -45,9 +45,20 @@ body {
 
 .main-btn {
   background-color: $primary_orange;
-  width: fit-content;
+  width: 200px;
   padding: 10px 30px 10px 30px;
-  border-radius: 10px;
-  font-family: 'Sans Pro Bold', sans-serif;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: 'Sans Pro Semi-Bold', sans-serif;
   color: $primary_white;
+  border: none;
+  cursor: pointer;
+}
+
+.white-btn {
+  @extend .main-btn;
+  width: 170px;
+  background-color: $primary_white;
+  border: solid $secondary_border_gray 1px;
+  color: $font_dark_gray;
 }

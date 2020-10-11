@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import BrandBlock from './atoms/BrandBlock';
 import SearchFilter from './atoms/SearchFilter';
+import ButtonsBlock from './atoms/ButtonsBlock';
 import axios from 'axios';
 
 const Dashboard = () => {
@@ -36,12 +37,15 @@ const Dashboard = () => {
       <div className='brands-container'>
         <SearchFilter onChange={(e) => filterBrands(e)} />
         <div className='grid-container'>
+          <ButtonsBlock />
           {brands.length > 0 ? (
             brands.map((brand) => (
               <BrandBlock key={brand.name} imgUrl={brand.imgUrl} />
             ))
           ) : (
-            <p style={{ marginTop: 50 }}>Sorry, not found...</p>
+            <p style={{ marginTop: 50, fontStyle: 'italic' }}>
+              Sorry, not found...
+            </p>
           )}
         </div>
       </div>

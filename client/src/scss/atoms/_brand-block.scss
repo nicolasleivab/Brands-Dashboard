@@ -8,4 +8,25 @@
   background-color: $primary_white;
   box-shadow: 0px 4px 10px $font_light_gray;
   margin: 25px 0 50px 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    list-style: none;
+    margin: 7px 0 7px 0;
+    font-family: 'Sans Pro Semi-Bold', sans-serif;
+    color: $font_dark_gray;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+      p {
+        color: $primary_orange;
+      }
+    }
+  }
 }
