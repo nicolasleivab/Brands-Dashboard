@@ -6,10 +6,8 @@
   border-right: solid $secondary_border_gray 1px;
   background-color: $primary_white;
   z-index: 2;
+  overflow-y: scroll;
 
-  @media only screen and (max-width: 850px) {
-    visibility: hidden;
-  }
   ul {
     margin: 85px 0 0 0;
     display: flex;
@@ -19,6 +17,11 @@
     justify-content: flex-start;
     align-items: center;
     list-style: none;
+
+    @media only screen and (max-width: 850px) {
+      margin: 115px 0 0 0;
+      
+    }
   }
   li {
     width: 100%;
@@ -64,6 +67,13 @@
         color: $primary_orange;
       }
     }
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    color: $font_light_gray;
   }
 }
 .left-margin {

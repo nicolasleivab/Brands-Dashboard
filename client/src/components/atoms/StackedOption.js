@@ -9,7 +9,7 @@ const StackedOption = (props) => {
   return (
     <Fragment>
       <li tabIndex={1}>
-        <div class='nav-option'>
+        <div className='nav-option'>
           <FontAwesomeIcon icon={firstIcon} className='option-icon' />
           <p>{firstOption}</p>
           <FontAwesomeIcon
