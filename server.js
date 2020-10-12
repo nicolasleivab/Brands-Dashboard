@@ -18,8 +18,6 @@ app.use(express.json({ extended: false }), function (req, res, next) {
   next();
 });
 
-app.get('/', (req, res) => res.json({ msg: 'Remazing Challenge' }));
-
 // Define Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/auth', require('./routes/auth'));
