@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState, useContext } from 'react';
 import BrandBlock from './atoms/BrandBlock';
+import BrandDescription from './atoms/BrandDescription';
 import SearchFilter from './atoms/SearchFilter';
 import ButtonsBlock from './atoms/ButtonsBlock';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -87,6 +88,9 @@ const Dashboard = () => {
                       imgUrl={brand.imgUrl}
                       name={brand.name}
                     />
+                    {layoutStyle === 'brands-flex-container' && (
+                      <BrandDescription />
+                    )}
                   </div>
                 )}
               </Motion>
