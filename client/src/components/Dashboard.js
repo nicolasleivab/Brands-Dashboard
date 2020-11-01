@@ -8,12 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import ModalContext from '../context/modal/modalContext';
 import { Motion, spring, presets } from 'react-motion';
+import useWindowSize from '../hooks/useWindowSize';
 import axios from 'axios';
 
 const Dashboard = () => {
   const [brands, setBrands] = useState([]);
   const [storedBrands, storeBrands] = useState([]);
   const [layoutStyle, setLayout] = useState('brands-grid-container');
+  const [windowWidth, windowHeight] = useWindowSize();
 
   const modalContext = useContext(ModalContext);
   const { modal, setModal, hideModal } = modalContext;
@@ -33,6 +35,11 @@ const Dashboard = () => {
     getBrands();
   }, []);
 
+  useEffect(() => {
+    if (windowWidth < 1048) {
+      setLayout('brands-grid-container');
+    }
+  }, [windowWidth]);
   const filterBrands = (e) => {
     const filteredBrands = storedBrands.filter((brand) =>
       brand.name.toLowerCase().includes(e.target.value.toLowerCase())
@@ -78,10 +85,20 @@ const Dashboard = () => {
               >
                 {(interpolatedStyles) => (
                   <div
-                    style={{
-                      transform: `translateY(${interpolatedStyles.translateY}px)`,
-                      opacity: interpolatedStyles.opacity,
-                    }}
+                    style={
+                      layoutStyle === 'brands-flex-container'
+                        ? {
+                            transform: `translateY(${interpolatedStyles.translateY}px)`,
+                            opacity: interpolatedStyles.opacity,
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                          }
+                        : {
+                            transform: `translateY(${interpolatedStyles.translateY}px)`,
+                            opacity: interpolatedStyles.opacity,
+                          }
+                    }
                   >
                     <BrandBlock
                       key={brand.name}
