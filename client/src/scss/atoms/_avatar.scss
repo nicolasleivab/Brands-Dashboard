@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 8px 0 25px;
+  margin: 0 0.8rem 0 2.5rem;
   cursor: pointer;
 
   &:focus,
@@ -15,12 +15,12 @@
   }
 
   .username {
-    margin: 0 8px 0 0;
+    margin: 0 0.8rem 0 0;
   }
 
   .img-container {
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background-color: transparent;
 
@@ -30,7 +30,7 @@
   }
   .option-icon {
     color: $font_dark_gray;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 2rem;
 
     &:focus,
     &:active {

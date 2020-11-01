@@ -1,7 +1,7 @@
 .notifications-container {
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 3.5rem;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,13 @@
 
   .orange-circle {
     position: absolute;
-    top: 2px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
+    top: 0.2rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: $primary_orange;
-    font-size: 10px;
+    font-size: 1rem;
     font-family: 'Sans Pro Semi-Bold';
     color: $primary_white;
     display: flex;

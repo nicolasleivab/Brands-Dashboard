@@ -1,12 +1,12 @@
 .logo-container {
-  height: 70px;
-  width: 250px;
+  height: 7rem;
+  width: 25rem;
   position: absolute;
   left: 0;
   top: 0;
   background-color: $primary_white;
-  border-right: solid $secondary_border_gray 1px;
-  border-bottom: solid $secondary_border_gray 1px;
+  border-right: solid $secondary_border_gray 0.1rem;
+  border-bottom: solid $secondary_border_gray 0.1rem;
   background-color: $primary_white;
   z-index: 4;
   display: flex;
@@ -14,10 +14,10 @@
   justify-content: center;
 
   @media only screen and (max-width: 850px) {
-    width: 170px;
+    width: 17rem;
   }
 
   img {
-    margin-right: 20px;
+    margin-right: 2rem;
   }
 }

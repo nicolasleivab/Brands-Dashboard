@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  width: 250px;
-  height: 250px;
+  padding: 2rem;
+  width: 25rem;
+  height: 25rem;
   background-color: $primary_white;
-  box-shadow: 0px 4px 10px $font_light_gray;
-  margin: 25px 0 50px 0;
+  box-shadow: 0px 0.4rem 1rem $font_light_gray;
+  margin: 2.5rem 0 5rem 0;
 
   @media only screen and (max-width: 850px) {
-    margin: 0px 0 30px 0;
+    margin: 0 0 3rem 0;
   }
 
   ul {
@@ -21,7 +21,7 @@
   }
   li {
     list-style: none;
-    margin: 7px 0 7px 0;
+    margin: 0.7rem 0 0.7rem 0;
     font-family: 'Sans Pro Semi-Bold', sans-serif;
     color: $font_dark_gray;
     cursor: pointer;
