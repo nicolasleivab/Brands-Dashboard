@@ -30,6 +30,7 @@ const SearchFilter = (props) => {
                 : 'layout-icon'
             }
             onClick={setGrid}
+            onKeyDown={(e) => (e.key === 'Enter' ? setGrid() : null)}
             tabIndex={0}
           />
           <FontAwesomeIcon
@@ -40,6 +41,7 @@ const SearchFilter = (props) => {
                 : 'layout-icon'
             }
             onClick={setFlex}
+            onKeyDown={(e) => (e.key === 'Enter' ? setFlex() : null)}
             tabIndex={0}
           />
         </div>
