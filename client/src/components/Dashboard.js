@@ -6,6 +6,7 @@ import ButtonsBlock from './atoms/ButtonsBlock';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import ModalContext from '../context/modal/modalContext';
+import { Motion, spring, presets } from 'react-motion';
 import axios from 'axios';
 
 const Dashboard = () => {
@@ -44,7 +45,7 @@ const Dashboard = () => {
         <FontAwesomeIcon
           icon={faEllipsisV}
           className='mobile-menu'
-          onClick={() => modal ? hideModal() : setModal()}
+          onClick={() => (modal ? hideModal() : setModal())}
         />
       </div>
       <div className='brands-container'>
@@ -53,11 +54,31 @@ const Dashboard = () => {
           <ButtonsBlock />
           {brands.length > 0 ? (
             brands.map((brand) => (
-              <BrandBlock
-                key={brand.name}
-                imgUrl={brand.imgUrl}
-                name={brand.name}
-              />
+              <Motion
+                defaultStyle={{
+                  opacity: 0,
+                  translateY: 30,
+                }}
+                style={{
+                  opacity: spring(1),
+                  translateY: spring(0, presets.wobbly),
+                }}
+              >
+                {(interpolatedStyles) => (
+                  <div
+                    style={{
+                      transform: `translateY(${interpolatedStyles.translateY}px)`,
+                      opacity: interpolatedStyles.opacity,
+                    }}
+                  >
+                    <BrandBlock
+                      key={brand.name}
+                      imgUrl={brand.imgUrl}
+                      name={brand.name}
+                    />
+                  </div>
+                )}
+              </Motion>
             ))
           ) : (
             <p style={{ marginTop: 50, fontStyle: 'italic' }}>
