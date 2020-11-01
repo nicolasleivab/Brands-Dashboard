@@ -2,6 +2,7 @@
 # Remazing Challenge
 
 Web application built as a code challenge provided by Remazing Team.
+Demo credentials email: nicolasleivab@gmail.com, password: remazing1
 
 <br  />
 
@@ -43,4 +44,4 @@ Web application built as a code challenge provided by Remazing Team.
 
 4. Insert in the config folder the default.json with the required credentials to connect with the MongoDB cloud cluster
 
-5. Run `npm run dev` which will start both server and client with concurrently. After successfully starting the app open [localhost:3000](http://localhost:3000/) in the browser
+5. Run `npm run dev` which will start both server and client with concurrently. After successfully starting the app open [localhost:3000](http://localhost:3000/) in the browser and login with demo credentials email: nicolasleivab@gmail.com and password: remazing1
