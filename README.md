@@ -1,11 +1,11 @@
 # Brands Dashboard
 
 Brands Dashboard layout built with the MERN stack and SASS.
-Demo credentials email: nicolasleivab@gmail.com, password: demoperson1
+Demo credentials email: nicolasleivab@gmail.com, password: demoperson1 or email: demo@person.com, password: demoperson2.
 
 <br  />
 
-<p align="center"><a  href="https://remazing-challenge.herokuapp.com/">Live</a></p>
+<p align="center"><a  href="https://brandsdashboard.herokuapp.com">Live</a></p>
 
 ## Built With
 
@@ -33,4 +33,4 @@ Demo credentials email: nicolasleivab@gmail.com, password: demoperson1
 
 4. Insert in the config folder the default.json with the required credentials to connect with the MongoDB cloud cluster
 
-5. Run `npm run dev` which will start both server and client with concurrently. After successfully starting the app open [localhost:3000](http://localhost:3000/) in the browser and login with demo credentials email: nicolasleivab@gmail.com and password: demoperson1
+5. Run `npm run dev` which will start both server and client with concurrently. After successfully starting the app open [localhost:3000](http://localhost:3000/) in the browser and login with demo credentials email: nicolasleivab@gmail.com and password: demoperson1 or email: demo@person.com, password: demoperson2
