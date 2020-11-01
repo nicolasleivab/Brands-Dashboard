@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: justify;
-  max-width: 75rem;
+  width: 75rem;
   flex-wrap: wrap;
   height: 25rem;
   background-color: $primary_white;
@@ -15,7 +15,10 @@
   padding: 5rem;
   line-height: 2.5rem;
 
-  @media only screen and (max-width: 1048px) {
+  @media only screen and (max-width: 1200px) {
     visibility: hidden;
+  }
+  @media only screen and (max-width: 1300px) {
+    width: 60rem;
   }
 }

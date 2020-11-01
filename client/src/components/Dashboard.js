@@ -38,7 +38,7 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    if (windowWidth < 1048) {
+    if (windowWidth < 1200) {
       setLayout('brands-grid-container');
     }
   }, [windowWidth]);

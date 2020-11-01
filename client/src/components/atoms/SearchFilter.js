@@ -20,7 +20,7 @@ const SearchFilter = (props) => {
         <input placeholder='Search brands...' onChange={onChange} />
         <FontAwesomeIcon icon={faSearch} className='search-icon' />
       </div>
-      {windowWidth > 1048 && (
+      {windowWidth > 1200 && (
         <div className='flex-container'>
           <FontAwesomeIcon
             icon={faThLarge}
