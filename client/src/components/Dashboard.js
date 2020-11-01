@@ -12,7 +12,7 @@ import axios from 'axios';
 const Dashboard = () => {
   const [brands, setBrands] = useState([]);
   const [storedBrands, storeBrands] = useState([]);
-  const [layoutStyle, setLayout] = useState('grid-container');
+  const [layoutStyle, setLayout] = useState('brands-grid-container');
 
   const modalContext = useContext(ModalContext);
   const { modal, setModal, hideModal } = modalContext;
@@ -38,8 +38,12 @@ const Dashboard = () => {
     );
     setBrands(filteredBrands);
   };
-  const setFlex = () => {};
-  const setGrid = () => {};
+  const setFlex = () => {
+    setLayout('brands-flex-container');
+  };
+  const setGrid = () => {
+    setLayout('brands-grid-container');
+  };
   return (
     <div>
       <div className='dashboard-title'>
@@ -55,6 +59,7 @@ const Dashboard = () => {
           onChange={(e) => filterBrands(e)}
           setGrid={() => setGrid()}
           setFlex={() => setFlex()}
+          layoutStyle={layoutStyle}
         />
         <div className={layoutStyle}>
           <ButtonsBlock />
