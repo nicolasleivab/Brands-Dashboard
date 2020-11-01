@@ -16,6 +16,8 @@ const Dashboard = () => {
   const [storedBrands, storeBrands] = useState([]);
   const [layoutStyle, setLayout] = useState('brands-grid-container');
   const [windowWidth, windowHeight] = useWindowSize();
+  const [startAnimation, setAnimation] = useState(true);
+  const initialStyle = { opacity: 0, translateY: 30 };
 
   const modalContext = useContext(ModalContext);
   const { modal, setModal, hideModal } = modalContext;
@@ -48,9 +50,17 @@ const Dashboard = () => {
   };
   const setFlex = () => {
     setLayout('brands-flex-container');
+    setAnimation(false);
+    setTimeout(function () {
+      setAnimation(true);
+    }, 10);
   };
   const setGrid = () => {
     setLayout('brands-grid-container');
+    setAnimation(false);
+    setTimeout(function () {
+      setAnimation(true);
+    }, 10);
   };
   return (
     <div>
@@ -71,7 +81,7 @@ const Dashboard = () => {
         />
         <div className={layoutStyle}>
           <ButtonsBlock />
-          {brands.length > 0 ? (
+          {brands.length > 0 && startAnimation ? (
             brands.map((brand) => (
               <Motion
                 defaultStyle={{
@@ -113,9 +123,32 @@ const Dashboard = () => {
               </Motion>
             ))
           ) : (
-            <p style={{ marginTop: 50, fontStyle: 'italic' }}>
-              Sorry, not found...
-            </p>
+            <Motion
+              defaultStyle={{
+                opacity: 0,
+                translateY: 30,
+              }}
+              style={{
+                opacity: spring(1),
+                translateY: spring(0, presets.wobbly),
+              }}
+            >
+              {(interpolatedStyles) => (
+                <div
+                  style={{
+                    transform: `translateY(${interpolatedStyles.translateY}px)`,
+                    opacity: interpolatedStyles.opacity,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <p style={{ marginTop: 50, fontStyle: 'italic' }}>
+                    Sorry, not found...
+                  </p>
+                </div>
+              )}
+            </Motion>
           )}
         </div>
       </div>
