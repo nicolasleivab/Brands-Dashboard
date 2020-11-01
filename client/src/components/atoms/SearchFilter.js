@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const SearchFilter = (props) => {
-  const { onChange } = props;
+  const { onChange, setGrid, setFlex } = props;
   const [windowWidth, windowHeight] = useWindowSize();
   return (
     <div className='search-filter'>
@@ -23,8 +23,16 @@ const SearchFilter = (props) => {
       </div>
       {windowWidth > 1048 && (
         <div className='flex-container'>
-          <FontAwesomeIcon icon={faThLarge} className='layout-icon' />
-          <FontAwesomeIcon icon={faBars} className='layout-icon' />
+          <FontAwesomeIcon
+            icon={faThLarge}
+            className='layout-icon'
+            onClick={setGrid}
+          />
+          <FontAwesomeIcon
+            icon={faBars}
+            className='layout-icon'
+            onClick={setFlex}
+          />
         </div>
       )}
     </div>
